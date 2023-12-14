@@ -119,6 +119,7 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
+     // * Fonction qui permet d'afficher l'image précédente dans la modale //
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -158,6 +159,7 @@
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+    // * Fonction qui permet d'afficher l'image suivante dans la modale //
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -218,6 +220,7 @@
                 </div>
             </div>`);
     },
+  // * Fonction qui permet d'afficher la navigation des filtres //
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
@@ -235,6 +238,8 @@
         console.error(`Unknown tags position: ${position}`);
       }
     },
+
+  // * Fonction qui permet d'afficher le filtre et la galerie avec l'option choisi //
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
         return;
