@@ -78,14 +78,16 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-#about-me .about-me__introduction, #about-me .about-me__introduction strong {
+#about-me .about-me__introduction,
+#about-me .about-me__introduction strong {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	font-size: 16px;
 	width: 60%;
 }
-#about-me p, #about-me strong {
+#about-me p,
+#about-me strong {
 	width: 80%;
 	font-size: 14px;
 	font-weight: normal;
@@ -316,6 +318,9 @@ input[type='submit'] {
 		bottom: 0;
 		right: 0;
 		z-index: -1;
+	}
+	form {
+		margin: auto;
 	}
 }
 
