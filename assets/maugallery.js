@@ -162,7 +162,6 @@
 			gallery.append(`<div class="modal fade" id="${
 				lightboxId ? lightboxId : 'galleryLightbox'
 			}" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-center">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -179,10 +178,10 @@
 				}
                           </div>
                       </div>
-                  </div>
                 </div>
             </div>`)
 		},
+
 		showItemTags(gallery, position, tags) {
 			var tagItems =
 				'<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>'
