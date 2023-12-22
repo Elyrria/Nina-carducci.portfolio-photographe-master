@@ -108,6 +108,9 @@ body {
 }
 .nav-pills .nav-link {
 	color: #000;
+}
+.nav-pills .nav-link:hover,
+.item-column img:hover {
 	cursor: pointer;
 }
 .item-column {
@@ -236,6 +239,11 @@ form textarea {
 input[type='submit'] {
 	background-color: #beb45a;
 	padding: 0.5em 1em;
+}
+input[type='text']:hover,
+input[type='email']:hover,
+textarea:hover {
+	cursor: pointer;
 }
 @media all and (max-width: 1280px) {
 	.carousel-item img {

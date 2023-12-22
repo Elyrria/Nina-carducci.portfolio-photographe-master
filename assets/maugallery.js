@@ -120,6 +120,7 @@
 				next = null
 			$(imagesCollection).each(function (i) {
 				if ($(activeImage).attr('src') === $(this).attr('src')) {
+					console.log(i)
 					index = i - 1
 				}
 			})
